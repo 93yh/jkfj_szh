@@ -1,0 +1,105 @@
+.Frame710 {
+    /* Frame 710 */
+    position: absolute;
+    background: rgba(54, 95, 75, 0.15);
+}
+
+.Frame71001 {
+    width: 1361px;
+    height: 1162px;
+    left: 105px;
+    top: 308px
+}
+
+
+.Vector8 {
+    /* Vector 8 */
+    position: absolute;
+    width: 432.32px;
+    height: 69px;
+    background: url("~@/assets/image/group962.svg");
+}
+
+.Frame10801 {
+    /* Frame 10801 */
+    position: absolute;
+    width: 431.42px;
+    height: 272.22px;
+    background: rgba(0, 204, 203, 0.2);
+    border: 1.07667px solid #00CCCB;
+}
+
+.ttf1 {
+    position: absolute;
+    text-align: left;
+    font-family: 'HarmonyOS_Sans_SC_Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26.7361px;
+    line-height: 67px;
+    /* or 250% */
+    color: #FFFFFF;
+}
+
+.Frame11035 {
+    /* Frame 11035 */
+    position: absolute;
+}
+
+.ttf2 {
+    position: absolute;
+    font-family: 'HarmonyOS_Sans_SC_Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 160.7%;
+    /* or 56px */
+    color: #4EEDFF;
+}
+
+.Rectangle1431 {
+    /* Rectangle 1431 */
+    width: 15px;
+    height: 15px;
+    background: #4EEDFF;
+    /* Inside auto layout */
+    /* flex: none;
+order: 0;
+flex-grow: 0; */
+}
+
+li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: #4EEDFF;
+    vertical-align: middle;
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+
+    /* Rectangle 1431 */
+    /* Inside auto layout */
+    /* flex: none;
+order: 0;
+flex-grow: 0; */
+}
+
+li {
+    list-style: none;
+    position: relative;
+    padding-left: 37px;
+}
+
+.ttf3 {
+    position: absolute;
+    font-family: 'HarmonyOS_Sans_SC_Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 200%;
+    /* or 56px */
+    text-align: justify;
+    color: #FFFFFF;
+}
