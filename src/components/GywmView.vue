@@ -6,7 +6,7 @@
       <div
         class="Frame11035 F1103501"
         :style="`
-          background-image: url( ${require('../assets/image/image105.png')} )`"
+          background-image: url( ${require('@/assets/image/image105.png')} )`"
       ></div>
       <div
         class="Frame11035 F1103502"

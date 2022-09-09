@@ -1,0 +1,298 @@
+{
+    "Dept": [
+        {
+            "id": 0,
+            "name": "科研中心",
+            "person": "冷予冰",
+            "phone": "13402081579",
+            "email": "leng_yb@163.com"
+        },
+        {
+            "id": 1,
+            "name": "房屋鉴定",
+            "person": "石昊",
+            "phone": "13916243612",
+            "email": "18247412@qq.com"
+        },
+        {
+            "id": 2,
+            "name": "工程检测",
+            "person": "曹东升",
+            "phone": "13046601175",
+            "email": "22361760@qq.com"
+        },
+        {
+            "id": 3,
+            "name": "建筑结构数字化",
+            "person": "王煜成",
+            "phone": "17621682274",
+            "email": "wychpsz@126.com"
+        },
+        {
+            "id": 4,
+            "name": "装配式建筑",
+            "person": "陈玲珠",
+            "phone": "13764953929",
+            "email": "20040392chen@163.com"
+        },
+        {
+            "id": 5,
+            "name": "预应力工程",
+            "person": "张富文",
+            "phone": "13774262868",
+            "email": "hangfuwen@sribs.com"
+        }
+    ],
+    "Business": [
+        {
+            "id": 0,
+            "name": "房屋质量检测鉴定",
+            "parm": [
+                {
+                    "parmId": "000",
+                    "parmName": "既有建筑结构安全性检测评估",
+                    "imgPath": "@/assets/image/image105.png",
+                    "details": [
+                        "城镇建筑建设和运行全生命期的检测监测、鉴定评估、技术咨询等综合技术服务和研发创新。",
+                        "立足结构、扩展全专业的建筑安全诊断方案，保障城镇建筑运营安全，助力城市运行精细化管理。",
+                        "上海市首批甲级房屋质量检测资质企业。上海市规模和业务量最大、综合实力最强的房屋质量检测机构之一。",
+                        "蝉联历次上海市房屋质量检测行业综合考评第一。"
+                    ]
+                },
+                {
+                    "parmId": "001",
+                    "parmName": "房屋工程质量检测评估",
+                    "imgPath": "@/assets/image/image105.png",
+                    "details": [
+                        "城镇建筑建设和运行全生命期的检测监测、鉴定评估、技术咨询等综合技术服务和研发创新。立足结构、扩展全专业的建筑安全诊断方案，保障城镇建筑运营安全，助力城市运行精细化管理。上海市首批甲级房屋质量检测资质企业。上海市规模和业务量最大、综合实力最强的房屋质量检测机构之一。",
+                        "蝉联历次上海市房屋质量检测行业综合考评第一。"
+                    ]
+                },
+                {
+                    "parmId": "002",
+                    "parmName": "施工影响下房屋检测评估",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "003",
+                    "parmName": "优秀历史建筑综合检测评估及文物建筑勘察",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "004",
+                    "parmName": "房屋结构抗震鉴定",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "005",
+                    "parmName": "房屋灾后检测评估",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "006",
+                    "parmName": "房屋完损检测",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "007",
+                    "parmName": "房屋渗漏水检测",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "008",
+                    "parmName": "房屋外立面完损及高空坠物安全隐患排查检测",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "109",
+                    "parmName": "房屋振动测试",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "110",
+                    "parmName": "工程尽调与设施设备调查",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "建筑结构健康监测与数字化服务",
+            "parm": [
+                {
+                    "parmId": "100",
+                    "parmName": "结构健康监测",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "101",
+                    "parmName": "建筑结构精细化测绘与数字实景模型创建",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "102",
+                    "parmName": "无人机遥感测绘与咨询",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "103",
+                    "parmName": "建筑运维管理系统开发与BIM咨询",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "结构性能测试与分析咨询",
+            "parm": [
+                {
+                    "parmId": "300",
+                    "parmName": "新型结构体系研发与测试",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "301",
+                    "parmName": "大型工程结构和构件性能试验",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "302",
+                    "parmName": "复杂结构仿真分析",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "303",
+                    "parmName": "木竹结构设计咨询",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "304",
+                    "parmName": "工程咨询",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "装配式建筑检测评估与质量管控",
+            "parm": [
+                {
+                    "parmId": "300",
+                    "parmName": "装配式混凝土建筑套筒灌浆饱满性检测和缺陷整治",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "301",
+                    "parmName": "装配式钢结构构件及结构性能检测与评估",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "302",
+                    "parmName": "建筑及市政预制部品部件现场检验和实验室检验",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "303",
+                    "parmName": "装配式建筑外墙渗漏水检测",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "304",
+                    "parmName": "装配式建筑施工质量全过程管控和咨询",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "预应力工程",
+            "parm": [
+                {
+                    "parmId": "400",
+                    "parmName": "预应力工程深化设计和施工",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                },
+                {
+                    "parmId": "401",
+                    "parmName": "预应力工程技术咨询与产品研发",
+                    "imgPath": "",
+                    "details": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    ]
+}
