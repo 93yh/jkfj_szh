@@ -1,7 +1,7 @@
 <template>
   <div class="gywm">
     <div
-      class="Frame710 Frame71001"
+      class="Frame710 F71001"
     >
       <div
         class="Frame11035 F1103501"
@@ -9,18 +9,11 @@
           background-image: url( ${require('../assets/image/image105.png')} )`"
       ></div>
       <div
-        class="Frame11035"
-        style="
-          position: absolute;
-          height: 452px;
-          left: 76px;
-          right: 102px;
-          top: 625px;
-        "
+        class="Frame11035 F1103502"
       >
         <div class="ttf3">
           <li
-            style="margin-bottom: 20px; padding-left: 46px"
+            class="L01"
             v-for="arr in arr6"
             :key="arr"
           >
@@ -30,20 +23,17 @@
       </div>
     </div>
     <div
-      class="Frame710"
-      style="width: 2198px; height: 1162px; left: 1557px; top: 308px"
+      class="Frame710 F71002"
     >
-      <div class="ttf2" style="left: 107px; top: 75px">房屋质量检测鉴定</div>
+      <div class="ttf2 ttf201">房屋质量检测鉴定</div>
       <div
-        class="Frame11035"
-        style="width: 625px; height: 892px; left: 107px; top: 165px"
+        class="Frame11035 F1103503"
       >
         <div
-          class="ttf3"
-          style="height: 892px; left: 0px; right: 0px; top: 0px"
+          class="ttf3 ttf301"
         >
           <li
-            style="margin-top: 0px; margin-bottom: 20px"
+            class="L02"
             v-for="arr in arr1"
             :key="arr"
           >
@@ -51,19 +41,17 @@
           </li>
         </div>
       </div>
-      <div class="ttf2" style="left: 854px; top: 75px">
+      <div class="ttf2 ttf202">
         建筑结构健康监测与数字化服务
       </div>
       <div
-        class="Frame11035"
-        style="width: 569px; height: 284px; left: 854px; top: 165px"
+        class="Frame11035 F1103506"
       >
         <div
-          class="ttf3"
-          style="height: 284px; left: 0px; right: 0px; top: 0px"
+          class="ttf3 ttf302"
         >
           <li
-            style="margin-top: 0px; margin-bottom: 20px"
+            class="L02"
             v-for="arr in arr2"
             :key="arr"
           >
@@ -71,19 +59,17 @@
           </li>
         </div>
       </div>
-      <div class="ttf2" style="left: 854px; top: 565px">
+      <div class="ttf2 ttf203">
         结构性能测试与分析咨询
       </div>
       <div
-        class="Frame11035"
-        style="width: 429px; height: 360px; left: 854px; top: 655px"
+        class="Frame11035 F1103507"
       >
         <div
-          class="ttf3"
-          style="height: 360px; left: 0px; right: 0px; top: 0px"
+          class="ttf3 ttf303"
         >
           <li
-            style="margin-top: 0px; margin-bottom: 20px"
+            class="L02"
             v-for="arr in arr3"
             :key="arr"
           >
@@ -91,19 +77,17 @@
           </li>
         </div>
       </div>
-      <div class="ttf2" style="left: 1569px; top: 75px">
+      <div class="ttf2 ttf204">
         装配式建筑检测评估与质量管控
       </div>
       <div
-        class="Frame11035"
-        style="width: 535px; height: 535px; left: 1570px; top: 165px"
+        class="Frame11035 F1103508"
       >
         <div
-          class="ttf3"
-          style="height: 360px; left: 0px; right: 0px; top: 0px"
+          class="ttf3 ttf304"
         >
           <li
-            style="margin-top: 0px; margin-bottom: 20px"
+            class="L02"
             v-for="arr in arr4"
             :key="arr"
           >
@@ -111,17 +95,15 @@
           </li>
         </div>
       </div>
-      <div class="ttf2" style="left: 1569px; top: 801px">预应力工程</div>
+      <div class="ttf2 ttf205">预应力工程</div>
       <div
-        class="Frame11035"
-        style="width: 429px; height: 132px; left: 1569px; top: 891px"
+        class="Frame11035 F1103509"
       >
         <div
-          class="ttf3"
-          style="height: 132px; left: 0px; right: 0px; top: 0px"
+          class="ttf3 ttf305"
         >
           <li
-            style="margin-top: 0px; margin-bottom: 20px"
+            class="L02"
             v-for="(item, index) in arr5"
             :key="index"
             @click="arrClick(item)"
@@ -133,132 +115,87 @@
       </div>
     </div>
     <div
-      class="Frame710"
-      style="width: 3646px; height: 512px; left: 109px; top: 1560px"
+      class="Frame710 F71003"
     >
       <div
-        class="Vector8 ttf1"
-        style="
-          left: 67.22px;
-          top: 82.22px;
-          text-align: center;
-          font-weight: 400;
-          font-size: 36.4583px;
-        "
+        class="Vector8 ttf1 ttf101"
       >
         科研中心
       </div>
-      <div class="Frame10801" style="left: 68.43px; top: 158.78px">
-        <div class="ttf1" style="left: 11.55%; top: 12.95%; right: 17.75%">
+      <div class="Frame10801 F1080101">
+        <div class="ttf1 ttf1001">
           负责人：冷予冰<br />电话：13402081579<br />邮箱：leng_yb@163.com
         </div>
       </div>
 
       <div
-        class="Vector8 ttf1"
-        style="
-          left: 527.22px;
-          top: 82.22px;
-          text-align: center;
-          font-weight: 400;
-          font-size: 36.4583px;
-        "
+        class="Vector8 ttf1 ttf102"
       >
         房屋鉴定
       </div>
-      <div class="Frame10801" style="left: 528.43px; top: 158.78px">
-        <div class="ttf1" style="left: 11.55%; top: 12.95%">
+      <div class="Frame10801 F1080102">
+        <div class="ttf1 ttf1001">
           负责人：石昊<br />电话：13916243612<br />邮箱：18247412@qq.com
         </div>
       </div>
 
       <div
-        class="Vector8 ttf1"
-        style="
-          left: 987.22px;
-          top: 82.22px;
-          text-align: center;
-          font-weight: 400;
-          font-size: 36.4583px;
-        "
+        class="Vector8 ttf1 ttf103"
       >
         工程检测
       </div>
-      <div class="Frame10801" style="left: 988.43px; top: 158.78px">
-        <div class="ttf1" style="left: 11.55%; top: 12.95%">
+      <div class="Frame10801 F1080103">
+        <div class="ttf1 ttf1001">
           负责人：曹东升<br />电话：13046601175<br />邮箱：22361760@qq.com
         </div>
       </div>
 
       <div
-        class="Vector8 ttf1"
-        style="
-          left: 1447.22px;
-          top: 82.22px;
-          text-align: center;
-          font-weight: 400;
-          font-size: 36.4583px;
-        "
+        class="Vector8 ttf1 ttf104"
       >
         建筑结构数字化
       </div>
-      <div class="Frame10801" style="left: 1448.43px; top: 158.78px">
-        <div class="ttf1" style="left: 11.55%; top: 12.95%">
+      <div class="Frame10801 F1080104">
+        <div class="ttf1 ttf1001">
           负责人：王煜成<br />电话：17621682274<br />邮箱：wychpsz@126.com
         </div>
       </div>
 
       <div
-        class="Vector8 ttf1"
-        style="
-          left: 1907.22px;
-          top: 82.22px;
-          text-align: center;
-          font-weight: 400;
-          font-size: 36.4583px;
-        "
+        class="Vector8 ttf1 ttf105"
       >
         装配式建筑
       </div>
-      <div class="Frame10801" style="left: 1908.43px; top: 158.78px">
-        <div class="ttf1" style="left: 5%; top: 12.95%">
+      <div class="Frame10801 F1080105">
+        <div class="ttf1 ttf1002">
           负责人：陈玲珠<br />电话：13764953929<br />邮箱：20040392chen@163.com
         </div>
       </div>
 
       <div
-        class="Vector8 ttf1"
-        style="
-          left: 2367.22px;
-          top: 82.22px;
-          text-align: center;
-          font-weight: 400;
-          font-size: 36.4583px;
-        "
+        class="Vector8 ttf1 ttf106"
       >
         预应力工程
       </div>
-      <div class="Frame10801" style="left: 2368.43px; top: 158.78px">
-        <div class="ttf1" style="left: 11.55%; top: 12.95%">
+      <div class="Frame10801 F1080106">
+        <div class="ttf1 ttf1001">
           负责人：张富文<br />电话：13774262868<br />邮箱：hangfuwen@sribs.com
         </div>
       </div>
 
       <div
-        class="Frame11035"
-        style="left: 2955px; top: 103px; width: 240px; height: 328px"
+        class="Frame11035 F1103504"
       >
         <img src="@/assets/image/gfwz.png" width="240px" alt="官方网站" />
-        <div class="ttf1" style="left: 64px; top: 283px; font-size: 28px">
+        <div class="ttf1 ttf1003">
           官方网站
         </div>
       </div>
       <div
-        class="Frame11035"
-        style="left: 3319px; top: 103px; width: 240px; height: 328px"
+        class="Frame11035 F1103505"
       >
         <img src="@/assets/image/wxgzh.png" width="234px" alt="微信公众号" />
-        <div class="ttf1" style="left: 47px; top: 283px; font-size: 28px">
+        <div class="ttf1 ttf1004">
           微信公众号
         </div>
       </div>
