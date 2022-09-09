@@ -4,12 +4,14 @@
       <div
         class="Frame11035 F1103501"
         :style="`
-          background-image: url( ${require('@/assets/image/image105.png')} )`"
+          background-image: url( ${require('@/assets/image/'+arr6.imgPath)} )`"
       ></div>
       <div class="Frame11035 F1103502">
         <div class="ttf3">
-          <li class="L01" v-for="(arr,index) in arr6" :key="index">
-            {{ arr.details }}
+          <li class="L01" v-for="(arr,index) in arr6.details" :key="index"
+              @click="arrClick(arr)"
+              @keydown="arrClick(arr)">
+            {{ arr }}
           </li>
         </div>
       </div>
@@ -18,7 +20,9 @@
       <div class="ttf2 ttf201">{{arr0.name}}</div>
       <div class="Frame11035 F1103503">
         <div class="ttf3 ttf301">
-          <li class="L02" v-for="(arr,index) in arr0.parm" :key="index">
+          <li class="L02" v-for="(arr,index) in arr0.parm" :key="index"
+              @click="arrClick(arr)"
+              @keydown="arrClick(arr)">
             {{ arr.parmName }}
           </li>
         </div>
@@ -34,7 +38,9 @@
       <div class="ttf2 ttf203">{{arr2.name}}</div>
       <div class="Frame11035 F1103507">
         <div class="ttf3 ttf303">
-          <li class="L02" v-for="(arr,index) in arr2.parm" :key="index">
+          <li class="L02" v-for="(arr,index) in arr2.parm" :key="index"
+              @click="arrClick(arr)"
+              @keydown="arrClick(arr)">
             {{ arr.parmName }}
           </li>
         </div>
@@ -42,7 +48,9 @@
       <div class="ttf2 ttf204">{{arr3.name}}</div>
       <div class="Frame11035 F1103508">
         <div class="ttf3 ttf304">
-          <li class="L02" v-for="(arr,index) in arr3.parm" :key="index">
+          <li class="L02" v-for="(arr,index) in arr3.parm" :key="index"
+              @click="arrClick(arr)"
+              @keydown="arrClick(arr)">
             {{ arr.parmName }}
           </li>
         </div>
@@ -126,12 +134,13 @@ export default {
       arr2: gywm.Business[2],
       arr3: gywm.Business[3],
       arr4: gywm.Business[4],
-      arr5: gywm.Business[5],
+      arr6: gywm.Business[0].parm[0],
     };
   },
   methods: {
-    arrClick(arr6) {
-      return arr6;
+    arrClick(arr) {
+      this.arr6 = arr;
+      return this.arr6;
     },
   },
 };
