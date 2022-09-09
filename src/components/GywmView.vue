@@ -8,8 +8,8 @@
       ></div>
       <div class="Frame11035 F1103502">
         <div class="ttf3">
-          <li class="L01" v-for="arr in arr6" :key="arr">
-            {{ arr }}
+          <li class="L01" v-for="(arr,index) in arr6" :key="index">
+            {{ arr.details }}
           </li>
         </div>
       </div>
@@ -130,8 +130,8 @@ export default {
     };
   },
   methods: {
-    arrClick(arr) {
-      console.log(arr);
+    arrClick(arr6) {
+      return arr6;
     },
   },
 };
