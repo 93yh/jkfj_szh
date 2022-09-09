@@ -15,49 +15,47 @@
       </div>
     </div>
     <div class="Frame710 F71002">
-      <div class="ttf2 ttf201">房屋质量检测鉴定</div>
+      <div class="ttf2 ttf201">{{arr0.name}}</div>
       <div class="Frame11035 F1103503">
         <div class="ttf3 ttf301">
-          <li class="L02" v-for="arr in arr1" :key="arr">
-            {{ arr }}
+          <li class="L02" v-for="(arr,index) in arr0.parm" :key="index">
+            {{ arr.parmName }}
           </li>
         </div>
       </div>
-      <div class="ttf2 ttf202">建筑结构健康监测与数字化服务</div>
+      <div class="ttf2 ttf202">{{arr1.name}}</div>
       <div class="Frame11035 F1103506">
         <div class="ttf3 ttf302">
-          <li class="L02" v-for="arr in arr2" :key="arr">
-            {{ arr }}
+          <li class="L02" v-for="(arr,index) in arr1.parm" :key="index">
+            {{ arr.parmName }}
           </li>
         </div>
       </div>
-      <div class="ttf2 ttf203">结构性能测试与分析咨询</div>
+      <div class="ttf2 ttf203">{{arr2.name}}</div>
       <div class="Frame11035 F1103507">
         <div class="ttf3 ttf303">
-          <li class="L02" v-for="arr in arr3" :key="arr">
-            {{ arr }}
+          <li class="L02" v-for="(arr,index) in arr2.parm" :key="index">
+            {{ arr.parmName }}
           </li>
         </div>
       </div>
-      <div class="ttf2 ttf204">装配式建筑检测评估与质量管控</div>
+      <div class="ttf2 ttf204">{{arr3.name}}</div>
       <div class="Frame11035 F1103508">
         <div class="ttf3 ttf304">
-          <li class="L02" v-for="arr in arr4" :key="arr">
-            {{ arr }}
+          <li class="L02" v-for="(arr,index) in arr3.parm" :key="index">
+            {{ arr.parmName }}
           </li>
         </div>
       </div>
-      <div class="ttf2 ttf205">预应力工程</div>
+      <div class="ttf2 ttf205">{{arr4.name}}</div>
       <div class="Frame11035 F1103509">
         <div class="ttf3 ttf305">
           <li
-            class="L02"
-            v-for="(item, index) in arr5"
-            :key="index"
-            @click="arrClick(item)"
-            @keydown="arrClick(item)"
+            class="L02" v-for="(arr,index) in arr4.parm" :key="index"
+            @click="arrClick(arr)"
+            @keydown="arrClick(arr)"
           >
-            {{ item }}
+            {{ arr.parmName }}
           </li>
         </div>
       </div>
@@ -118,55 +116,22 @@
 </template>
 
 <script>
+import gywm from '@/assets/data/gywm.json';
+
 export default {
   data() {
     return {
-      arr1: [
-        '既有建筑结构安全性检测评估',
-        '房屋工程质量检测评估',
-        '施工影响下房屋检测评估',
-        '优秀历史建筑综合检测评估及文物建筑勘察',
-        '房屋结构抗震鉴定',
-        '房屋灾后检测评估',
-        '房屋完损检测',
-        '房屋渗漏水检测',
-        '房屋外立面完损及高空坠物安全隐患排查检测',
-        '房屋振动测试',
-        '工程尽调与设施设备调查',
-        '建筑工程司法和仲裁鉴定',
-      ],
-      arr2: [
-        '结构健康监测',
-        '建筑结构精细化测绘与数字实景模型创建',
-        '无人机遥感测绘与咨询',
-        '建筑运维管理系统开发与BIM咨询',
-      ],
-      arr3: [
-        '新型结构体系研发与测试',
-        '大型工程结构和构件性能试验',
-        '复杂结构仿真分析',
-        '木竹结构设计咨询',
-        '工程咨询',
-      ],
-      arr4: [
-        '装配式混凝土建筑套筒灌浆饱满性检测和缺陷整治',
-        '装配式钢结构构件及结构性能检测与评估',
-        '建筑及市政预制部品部件现场检验和实验室检验',
-        '装配式建筑外墙渗漏水检测',
-        '装配式建筑施工质量全过程管控和咨询',
-      ],
-      arr5: ['预应力工程深化设计和施工', '预应力工程技术咨询与产品研发'],
-      arr6: [
-        '城镇建筑建设和运行全生命期的检测监测、鉴定评估、技术咨询等综合技术服务和研发创新。',
-        '立足结构、扩展全专业的建筑安全诊断方案，保障城镇建筑运营安全，助力城市运行精细化管理。',
-        '上海市首批甲级房屋质量检测资质企业。上海市规模和业务量最大、综合实力最强的房屋质量检测机构之一。',
-        '蝉联历次上海市房屋质量检测行业综合考评第一。',
-      ],
+      arr0: gywm.Business[0],
+      arr1: gywm.Business[1],
+      arr2: gywm.Business[2],
+      arr3: gywm.Business[3],
+      arr4: gywm.Business[4],
+      arr5: gywm.Business[5],
     };
   },
   methods: {
-    arrClick(item) {
-      console.log(item);
+    arrClick(arr) {
+      console.log(arr);
     },
   },
 };
