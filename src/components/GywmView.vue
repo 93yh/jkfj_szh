@@ -4,12 +4,8 @@
       class="Frame710 Frame71001"
     >
       <div
-        class="Frame11035"
+        class="Frame11035 F1103501"
         :style="`
-          width: 1197px;
-          height: 478px;
-          left: 76px;
-          top: 74px;
           background-image: url( ${require('../assets/image/image105.png')} )`"
       ></div>
       <div
