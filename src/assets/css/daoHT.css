@@ -15,21 +15,21 @@
     left: 3556px;
     top: 81px;
 }
-.Vector11005{
+.Vector11005B{
     position: absolute;
     left: 0%;
     right: 75.74%;
     top: 0%;
     bottom: 0%;
-    background: url("~@/assets/image/F11005.svg");
+    background: url("~@/assets/image/F11005B.svg");
 }
-.Vector10694{
+.Vector10694Y{
     position: absolute;
     left: 0%;
     right: 75.74%;
     top: 0%;
     bottom: 0%;
-    background: url("~@/assets/image/F10694.svg");
+    background: url("~@/assets/image/F10694Y.svg");
 }
 .VectorDHT{
     position: absolute;
@@ -39,7 +39,7 @@
     bottom: 0%;
     background: url("~@/assets/image/DHT.svg");
 }
-.ttfDHT11005{
+.ttfDHT11005B{
     /* 项目分布 */
     position: absolute;
     left: 36.09%;
@@ -54,7 +54,7 @@
     /* identical to box height */
     color: #FFFFFF;
 }
-.ttfDHT10694{
+.ttfDHT10694Y{
     /* 关于我们 */
     position: absolute;
     left: 36.09%;
@@ -107,3 +107,7 @@
     text-align: center;
     color: #4EEDFF;
 }
+.Y{
+    color: #F5C915;
+}
+

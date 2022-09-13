@@ -1,6 +1,6 @@
 <template>
-  <div class='guanYuwm'>
-    <daoHT></daoHT>
+  <div class='GywmView'>
+    <!-- <daoHT></daoHT> -->
     <gywmBusiness></gywmBusiness>
     <div class='Frame710 F71003'>
       <gywmDept></gywmDept>
@@ -19,31 +19,19 @@
 <script>
 import gywmDept from '@/components/gywmDept.vue';
 import gywmBusiness from '@/components/gywmBusiness.vue';
-import daoHT from '@/components/daoHT.vue';
+// import daoHT from '@/components/daoHT.vue';
 
 export default {
-  name: 'guanYuwm',
+  name: 'GywmView',
   components: {
     gywmDept,
     gywmBusiness,
-    daoHT,
+    // daoHT,
   },
 };
 </script>
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style scoped>
-.guanYuwm {
-  background: url("~@/assets/image/bg.png");
-  /* 3840x2160_07_关于我们 */
-  /* position: relative;
-    width: 3840px;
-    height: 2160px;
-    background-size:100% 100%; */
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-size: 100% 100%;
-}
 @import "~@/assets/css/Gywm.css";
 </style>

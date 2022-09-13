@@ -1,18 +1,18 @@
 <template>
   <div class="home">
     <!-- <GywmView msg="Welcome to Your Vue.js App"/> -->
-    <GywmView/>
+    <jkBG/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import GywmView from '@/components/GywmView.vue';
+import jkBG from '@/components/bg.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    GywmView,
+    jkBG,
   },
 };
 </script>
