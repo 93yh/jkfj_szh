@@ -106,9 +106,10 @@
     height: 272.22px;
     background: rgba(0, 204, 203, 0.2);
     border: 1.07667px solid #00CCCB;
+    bottom: 0px;
 }
 
-.F1080101 {
+/* .F1080101 {
     left: 68.43px;
     top: 158.78px;
 }
@@ -136,6 +137,11 @@
 .F1080106 {
     left: 2368.43px;
     top: 158.78px;
+} */
+.F10808{
+    /* Frame 10808 */
+    width: 435.07px;
+    height: 350px;
 }
 
 .ttf1 {
@@ -149,8 +155,19 @@
     /* or 250% */
     color: #FFFFFF;
 }
+.ttf4 {
+    position: absolute;
+    font-family: 'HarmonyOS_Sans_SC_Regular';
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36.4583px;
+    line-height: 67px;
+    /* or 250% */
+    color: #FFFFFF;
+}
 
-.ttf101 {
+/* .ttf101 {
     left: 67.22px;
     top: 82.22px;
     text-align: center;
@@ -196,7 +213,7 @@
     text-align: center;
     font-weight: 400;
     font-size: 36.4583px;
-}
+} */
 
 .ttf1001 {
     left: 11.55%;

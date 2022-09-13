@@ -1,0 +1,109 @@
+.DHT11005 {
+    /* Frame 11005 */
+    position: absolute;
+    width: 169px;
+    height: 41px;
+    left: 3287px;
+    top: 81px;
+}
+
+.DHT10694{
+    /* Frame 10694 */
+    position: absolute;
+    width: 169px;
+    height: 41px;
+    left: 3556px;
+    top: 81px;
+}
+.Vector11005{
+    position: absolute;
+    left: 0%;
+    right: 75.74%;
+    top: 0%;
+    bottom: 0%;
+    background: url("~@/assets/image/F11005.svg");
+}
+.Vector10694{
+    position: absolute;
+    left: 0%;
+    right: 75.74%;
+    top: 0%;
+    bottom: 0%;
+    background: url("~@/assets/image/F10694.svg");
+}
+.VectorDHT{
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 0%;
+    background: url("~@/assets/image/DHT.svg");
+}
+.ttfDHT11005{
+    /* 项目分布 */
+    position: absolute;
+    left: 36.09%;
+    right: 0%;
+    top: 21.95%;
+    bottom: 0%;
+    font-family: 'HarmonyOS_Sans_SC_Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.ttfDHT10694{
+    /* 关于我们 */
+    position: absolute;
+    left: 36.09%;
+    right: 0%;
+    top: 21.95%;
+    bottom: 0%;
+    font-family: 'HarmonyOS_Sans_SC_Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32px;
+    /* identical to box height */
+    color: #F5C915;
+}
+.ttfDHT1001{
+    /* 上海建科房屋检测数字化协同工作管理平台 */
+    position: absolute;
+    left: 1323px;
+    top: 33px;
+    font-family: 'HarmonyOS_Sans_SC_Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 74px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 1px #127396,0px -1px #127396,1px 0px #127396,-1px 0px #127396;
+    filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.3));
+}
+.DHT10671{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 139px;
+    position: absolute;
+    width: 977px;
+    height: 41px;
+    left: 1433px;
+    top: 151px;
+}
+.ttfDHT10671{
+    font-family: 'HarmonyOS_Sans_SC_Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+    /* identical to box height */
+    text-align: center;
+    color: #4EEDFF;
+}

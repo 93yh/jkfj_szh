@@ -1,5 +1,6 @@
 <template>
   <div class='guanYuwm'>
+    <daoHT></daoHT>
     <gywmBusiness></gywmBusiness>
     <div class='Frame710 F71003'>
       <gywmDept></gywmDept>
@@ -18,12 +19,14 @@
 <script>
 import gywmDept from '@/components/gywmDept.vue';
 import gywmBusiness from '@/components/gywmBusiness.vue';
+import daoHT from '@/components/daoHT.vue';
 
 export default {
   name: 'guanYuwm',
   components: {
     gywmDept,
     gywmBusiness,
+    daoHT,
   },
 };
 </script>
