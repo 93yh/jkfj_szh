@@ -7,7 +7,7 @@
           background-image: url( ${require('@/assets/image/' + detail.imgPath)} )`"
       ></div>
       <div class='Frame11035 F1103502'>
-        <div class='ttf3'>
+        <div class='ttf5 ttf501'>
           <li
             class='L01'
             v-for='(arr, index) in detail.details'
@@ -22,7 +22,7 @@
       <div v-for="(item, index) in Business" :key="index">
         <div :class="'ttf2 ttf20'+(index+1)">{{ item.name }}</div>
         <div :class="'Frame11035 F110350'+(index+5)">
-          <div :class="'ttf3 ttf30'+(index+1)">
+          <div class='ttf3 ttf301'>
             <li
               class='L02'
               v-for='(arr, index) in item.parm'

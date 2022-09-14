@@ -35,6 +35,7 @@
 
 .F1103502 {
     position: absolute;
+    width: 1137px;
     height: 452px;
     left: 76px;
     right: 102px;
@@ -109,35 +110,6 @@
     bottom: 0px;
 }
 
-/* .F1080101 {
-    left: 68.43px;
-    top: 158.78px;
-}
-
-.F1080102 {
-    left: 528.43px;
-    top: 158.78px;
-}
-
-.F1080103 {
-    left: 988.43px;
-    top: 158.78px;
-}
-
-.F1080104 {
-    left: 1448.43px;
-    top: 158.78px;
-}
-
-.F1080105 {
-    left: 1908.43px;
-    top: 158.78px;
-}
-
-.F1080106 {
-    left: 2368.43px;
-    top: 158.78px;
-} */
 .F10808{
     /* Frame 10808 */
     width: 435.07px;
@@ -166,54 +138,6 @@
     /* or 250% */
     color: #FFFFFF;
 }
-
-/* .ttf101 {
-    left: 67.22px;
-    top: 82.22px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 36.4583px;
-}
-
-.ttf102 {
-    left: 527.22px;
-    top: 82.22px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 36.4583px;
-}
-
-.ttf103 {
-    left: 987.22px;
-    top: 82.22px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 36.4583px;
-}
-
-.ttf104 {
-    left: 1447.22px;
-    top: 82.22px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 36.4583px;
-}
-
-.ttf105 {
-    left: 1907.22px;
-    top: 82.22px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 36.4583px;
-}
-
-.ttf106 {
-    left: 2367.22px;
-    top: 82.22px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 36.4583px;
-} */
 
 .ttf1001 {
     left: 11.55%;
@@ -321,6 +245,24 @@ li.L01 {
 li.L02 {
     margin-top: 0px;
     margin-bottom: 20px;
+
+    display:-webkit-box;
+    overflow: hidden; /*超出隐藏*/
+    text-overflow: ellipsis;/*隐藏后添加省略号*/
+    -webkit-box-orient:vertical; 
+    -webkit-line-clamp:2; /*想显示多少行*/
+}
+
+.ttf5 {
+    position: absolute;
+    font-family: 'HarmonyOS_Sans_SC_Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 200%;
+    /* or 56px */
+    text-align: left;
+    color: #FFFFFF;
 }
 
 .ttf3 {
@@ -331,41 +273,25 @@ li.L02 {
     font-size: 28px;
     line-height: 200%;
     /* or 56px */
-    text-align: justify;
+    text-align: left;
     color: #FFFFFF;
 }
 
 .ttf301 {
-    height: 892px;
     left: 0px;
     right: 0px;
     top: 0px;
 }
 
-.ttf302 {
-    height: 284px;
+.ttf501 {
     left: 0px;
     right: 0px;
     top: 0px;
-}
-
-.ttf303 {
-    height: 360px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-}
-
-.ttf304 {
-    height: 360px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-}
-
-.ttf305 {
-    height: 132px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
+    bottom: 0px;
+        
+    display:-webkit-box;
+    overflow: hidden; /*超出隐藏*/
+    text-overflow: ellipsis;/*隐藏后添加省略号*/
+    -webkit-box-orient:vertical; 
+    -webkit-line-clamp:7; /*想显示多少行*/
 }

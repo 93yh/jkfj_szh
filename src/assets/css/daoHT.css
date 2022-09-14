@@ -23,6 +23,14 @@
     bottom: 0%;
     background: url("~@/assets/image/F11005B.svg");
 }
+.Vector11005Y{
+    position: absolute;
+    left: 0%;
+    right: 75.74%;
+    top: 0%;
+    bottom: 0%;
+    background: url("~@/assets/image/F11005Y.svg");
+}
 .Vector10694Y{
     position: absolute;
     left: 0%;
@@ -30,6 +38,14 @@
     top: 0%;
     bottom: 0%;
     background: url("~@/assets/image/F10694Y.svg");
+}
+.Vector10694B{
+    position: absolute;
+    left: 0%;
+    right: 75.74%;
+    top: 0%;
+    bottom: 0%;
+    background: url("~@/assets/image/F10694B.svg");
 }
 .VectorDHT{
     position: absolute;
@@ -54,7 +70,7 @@
     /* identical to box height */
     color: #FFFFFF;
 }
-.ttfDHT10694Y{
+.ttfDHT10694{
     /* 关于我们 */
     position: absolute;
     left: 36.09%;
@@ -67,7 +83,7 @@
     font-size: 27px;
     line-height: 32px;
     /* identical to box height */
-    color: #F5C915;
+    color: #FFFFFF;
 }
 .ttfDHT1001{
     /* 上海建科房屋检测数字化协同工作管理平台 */
