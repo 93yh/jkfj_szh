@@ -33,5 +33,17 @@ export default {
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style scoped>
+.GywmView {
+  background: url("~@/assets/image/bg.png");
+  /* 3840x2160_07_关于我们 */
+  /* position: relative;
+    width: 3840px;
+    height: 2160px;
+    background-size:100% 100%; */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+}
 @import "~@/assets/css/Gywm.css";
 </style>

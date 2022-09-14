@@ -1,5 +1,6 @@
 <template>
   <div class="jkBG">
+    <GywmView></GywmView>
     <div class="daoHT">
       <div class="VectorDHT">
         <div class="ttfDHT1001">上海建科房屋检测数字化协同工作管理平台</div>
@@ -19,7 +20,6 @@
         <div class="ttfDHT10694Y">{{ Daoht[5].name }}</div>
       </div>
     </div>
-    <GywmView></GywmView>
   </div>
 </template>
 
