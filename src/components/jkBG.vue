@@ -1,10 +1,12 @@
 <template>
   <div class="jkBG">
+    <DxxmView v-show="active == Daoht[3].id"></DxxmView>
     <GywmView v-show="active == Daoht[5].id"></GywmView>
     <div class="daoHT">
       <div class="VectorDHT">
         <div class="ttfDHT1001">上海建科房屋检测数字化协同工作管理平台</div>
         <div class="DHT10671">
+          <!-- 数据概览 -->
           <div
             class="ttfDHT10671"
             :class="active == Daoht[0].id ? 'Y' : ''"
@@ -13,6 +15,7 @@
           >
             {{ Daoht[0].name }}
           </div>
+          <!-- 项目管理 -->
           <div
             class="ttfDHT10671"
             :class="active == Daoht[1].id ? 'Y' : ''"
@@ -21,6 +24,7 @@
           >
             {{ Daoht[1].name }}
           </div>
+          <!-- 资源管理 -->
           <div
             class="ttfDHT10671"
             :class="active == Daoht[2].id ? 'Y' : ''"
@@ -29,6 +33,7 @@
           >
             {{ Daoht[2].name }}
           </div>
+          <!-- 典型项目 -->
           <div
             class="ttfDHT10671"
             :class="active == Daoht[3].id ? 'Y' : ''"
@@ -40,6 +45,7 @@
         </div>
       </div>
       <div class="DHT11005">
+        <!-- 项目分布 -->
         <div
           :class="active == Daoht[4].id ? 'Vector11005Y' : 'Vector11005B'"
         ></div>
@@ -52,6 +58,7 @@
           {{ Daoht[4].name }}
         </div>
       </div>
+      <!-- 关于我们 -->
       <div class="DHT10694">
         <div
           :class="active == Daoht[5].id ? 'Vector10694Y' : 'Vector10694B'"
@@ -72,11 +79,13 @@
 <script>
 import Dht from '@/assets/data/Dht.json';
 import GywmView from '@/components/GywmView.vue';
+import DxxmView from '@/components/DxxmView.vue';
 
 export default {
   name: 'jkBG',
   components: {
     GywmView,
+    DxxmView,
   },
   data() {
     return {

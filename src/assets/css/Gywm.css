@@ -3,20 +3,53 @@
     position: absolute;
     background: rgba(54, 95, 75, 0.15);
 }
-
+/* 关于我们 */
 .F71001 {
     width: 1361px;
     height: 1162px;
     left: 105px;
-    top: 308px
+    top: 308px;
 }
 
 .F71002 {
     width: 2198px;
     height: 1162px;
     left: 1557px;
-    top: 308px
+    top: 308px;
 }
+
+.F71003 {
+    width: 3646px;
+    height: 512px;
+    left: 109px;
+    top: 1560px;
+}
+/* 典型项目 */
+.F71004 {
+    width: 779px;
+    height: 1084px;
+    left: 105px;
+    top: 308px;
+}
+.F71005 {
+    width: 1993px;
+    height: 1084px;
+    left: 932px;
+    top: 308px;
+}
+.F71006 {
+    width: 779px;
+    height: 1084px;
+    left: 2973px;
+    top: 308px;
+}
+.F71007 {
+    width: 3636px;
+    height: 626px;
+    left: 109px;
+    top: 1446px;
+}
+
 
 .F71003 {
     width: 3646px;
@@ -253,17 +286,6 @@ li.L02 {
     -webkit-line-clamp:2; /*想显示多少行*/
 }
 
-.ttf5 {
-    position: absolute;
-    font-family: 'HarmonyOS_Sans_SC_Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 200%;
-    /* or 56px */
-    text-align: left;
-    color: #FFFFFF;
-}
 
 .ttf3 {
     position: absolute;
@@ -281,9 +303,11 @@ li.L02 {
     left: 0px;
     right: 0px;
     top: 0px;
+    cursor: pointer;
+
 }
 
-.ttf501 {
+.ttf302 {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -294,4 +318,133 @@ li.L02 {
     text-overflow: ellipsis;/*隐藏后添加省略号*/
     -webkit-box-orient:vertical; 
     -webkit-line-clamp:7; /*想显示多少行*/
+}
+.ttf303{
+    text-indent:56px;
+    width: 639px;
+    text-align:justify;
+}
+/* 典型项目 */
+.ttf7 {
+    position: absolute;
+    font-family: 'HarmonyOS_Sans_SC_Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* or 56px */
+    color: #4EEDFF;
+}
+.ttf701{
+    /* 工程概况 */
+    left: 68.52px;
+    top: 50px;
+}
+.ttf702{
+    /* 项目风采 */
+    left: 77.52px;
+    top: 50px;
+}
+.Rectangle67101{
+    /* Rectangle 671 */
+    position: absolute;
+    width: 179px;
+    height: 6px;
+    left: 68.79px;
+    top: 115px;
+
+    background: #4EEDFF;
+}
+.Rectangle67102{
+    /* Rectangle 671 */
+    position: absolute;
+    width: 179px;
+    height: 6px;
+    left: 77.79px;
+    top: 115px;
+
+    background: #4EEDFF;
+}
+.gcgk01{
+    position: absolute;
+    width: 672px;
+    height: 727px;
+    left: 68px;
+    top: 202px;
+}
+.ttf8 {
+    position: absolute;
+    text-align: left;
+    font-family: 'HarmonyOS_Sans_SC_Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 160.7%;
+    /* identical to box height, or 45px */
+    
+    color: #4EEDFF;
+}
+.ttf801{
+    /* 项目时间 */
+    position: absolute;
+    left: 0px;
+    top: 496px;
+}
+.ttf802{
+    /* 项目时间 */
+    position: absolute;
+    left: 0px;
+    top: 589px;
+}
+.ttf803{
+    /* 项目时间 */
+    position: absolute;
+    left: 0px;
+    top: 682px;
+}
+.W{
+    color: #FFFFFF;
+}
+.F11086{
+    /* Frame 11086 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 29px;
+
+    position: absolute;
+    width: 611px;
+    height: 45px;
+    left: 1330px;
+    top: 63px;
+}
+.F10657{
+    /* Frame 10657 */
+    width: 131px;
+    height: 45px;
+    background: rgba(49, 204, 236, 0.24);
+    border-radius: 6px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.ttf9 {
+    position: relative;
+    top: 8.46px;
+    font-family: 'HarmonyOS_Sans_SC_Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.9752px;
+    line-height: 28px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+.B{
+    background: #31CCEC;
 }

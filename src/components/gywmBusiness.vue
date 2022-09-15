@@ -7,7 +7,7 @@
           background-image: url( ${require('@/assets/image/' + detail.imgPath)} )`"
       ></div>
       <div class='Frame11035 F1103502'>
-        <div class='ttf5 ttf501'>
+        <div class='ttf3 ttf302'>
           <li
             class='L01'
             v-for='(arr, index) in detail.details'
