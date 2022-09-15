@@ -31,7 +31,10 @@
       <!-- 照片栏 -->
       <div class="Frame710 F71006"></div>
       <!-- 项目栏 -->
-      <div class="Frame710 F71007"></div>
+      <div class="Frame710 F71007">
+        <div class="xml">
+        </div>
+      </div>
     </div>
   </div>
 </template>
