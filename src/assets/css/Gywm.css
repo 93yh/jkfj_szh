@@ -455,3 +455,68 @@ li.L02 {
     right: 35px;
     bottom: 35px;
 }
+.ttf10 {
+    margin-top: 511px;
+    font-family: 'HarmonyOS_Sans_SC_Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 160.7%;
+    /* identical to box height, or 45px */
+    color: #FFFFFF;
+    bottom: 0px;
+
+}
+.swiper {
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    right: 0px;
+    /* bottom: 35px; */
+  }
+.swiper-slide {
+    height: 470px;
+    width: 845px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+/*去掉默认样式*/
+.swiper-button-prev:after{
+    display: none;
+}
+.swiper-button-next:after{
+    display: none;
+}
+/*自定义样式*/
+.swiper-button-prev{
+    width: 46px;
+    height: 32px;
+    background: url('~@/assets/image/left-arrow.svg');
+    left: 37px;
+    top: 269x;
+    background-size: 100% 100%;
+}
+ 
+.swiper-button-next{
+    width: 46px;
+    height: 32px;
+    background:url('~@/assets/image/right-arrow.svg');
+    right: 35px;
+    top: 269px;
+    background-size: 100% 100%;
+}
+.outSwiperBox{
+    position: relative;
+    /* padding: 0px 60px 0px 58px;
+    left: 37px;
+    right: 35px; */
+}
+.inSwiperBox{
+    position: inherit;
+    height: 556px;
+    width: 3446px;
+}
+.BB{
+    border: 8px solid #31CCEC;
+}
