@@ -6,15 +6,15 @@
         <div class="ttf7 ttf701">工程概况</div>
         <div class="Rectangle67101"></div>
         <div class="gcgk01">
-          <div class="ttf3 ttf303">{{ xm[1].gcgk }}</div>
+          <div class="ttf3 ttf303">{{ xm[xmActive].gcgk }}</div>
           <div class="ttf8 ttf801">
-            项目时间：<span class="W">{{ xm[1].xmTime }}</span>
+            项目时间：<span class="W">{{ xm[xmActive].xmTime }}</span>
           </div>
           <div class="ttf8 ttf802">
-            项目面积：<span class="W">{{ xm[1].xmArea }}</span>
+            项目面积：<span class="W">{{ xm[xmActive].xmArea }}</span>
           </div>
           <div class="ttf8 ttf803">
-            委托单位：<span class="W">{{ xm[1].wtdw }}</span>
+            委托单位：<span class="W">{{ xm[xmActive].wtdw }}</span>
           </div>
         </div>
       </div>
@@ -27,11 +27,25 @@
             <div
               class="F10657"
               :class="xmfcActive == item.abbr ? 'B' : ''"
-              @click="xmfcClick(item.abbr)"
-              @keydown="xmfcClick(item.abbr)"
+              @click="xmfcClick(item.abbr, xmActive)"
+              @keydown="xmfcClick(item.abbr, xmActive)"
             >
               <div class="ttf9">{{ item.xmfcName }}</div>
             </div>
+          </div>
+        </div>
+        <div class="F11084">
+          <iframe
+            :src="xmfcdetail"
+            class="F1108401"
+            title="项目风采"
+            v-if="this.xmfcActive === 'sjmx' || this.xmfcActive === 'qjmx'"
+          ></iframe>
+
+          <div
+            class="F1108402"
+            v-if="this.xmfcActive === 'chtz'"
+          >
           </div>
         </div>
       </div>
@@ -41,10 +55,6 @@
       <div class="Frame710 F71007">
         <div class="outSwiperBox">
           <swiper class="swiper inSwiperBox" :options="swiperOption">
-              <!-- @mouseenter="on_bot_enter"
-              @blur="on_bot_enter"
-              @mouseleave="on_bot_leave"
-              @focus="on_bot_leave" -->
             <swiper-slide
               v-for="(item, index) in xm"
               :key="index"
@@ -84,8 +94,9 @@ export default {
     return {
       xm: dxxm.xm,
       xmfc: dxxm.xmfc,
-      xmfcActive: -1,
+      xmfcActive: 'sjmx',
       xmfcdetail: dxxm.xm[0].sjmx,
+      pdfTotal: 1,
       xmActive: 0,
       swiperOption: {
         slidesPerView: 4,
@@ -95,13 +106,19 @@ export default {
         on: {
           click(sw) {
             vm.xmActive = sw.target.id; // 这里this是swiper的实例
+            vm.xmfcdetail = vm.xm[sw.target.id].sjmx;
+            vm.xmfcActive = 'sjmx';
+            this.autoplay.stop();
+          },
+          doubleTap() {
+            this.autoplay.start();
           },
         },
         autoplay: {
           // 自动轮播
           delay: 3000,
-          stopOnLastSlide: false,
-          // disableOnInteraction: false,
+          // stopOnLastSlide: false,
+          disableOnInteraction: false,
         },
         loopFillGroupWithBlank: true,
         mousewheel: true, // 开启鼠标滚轮控制Swiper切换。可设置鼠标选项，默认值false
@@ -134,19 +151,10 @@ export default {
     vm = this;
   },
   methods: {
-    xmfcClick(abbr) {
+    xmfcClick(abbr, id) {
       this.xmfcActive = abbr;
+      this.xmfcdetail = this.xm[id][abbr];
     },
-    // xmClick(id) {
-    //   this.xmActive = id;
-    // },
-    // on_bot_enter() {
-    //   this.processSwiper.autoplay.stop();
-    //   this.finshSwiper.autoplay.start();
-    // },
-    // on_bot_leave() {
-    //   this.swiper.autoplay.start();
-    // },
   },
 };
 </script>
