@@ -44,6 +44,6 @@ export default {
   height: 100%;
   position: fixed;
   background-size: 100% 100%;
-}
+} 
 @import "~@/assets/css/Gywm.css";
 </style>

@@ -42,20 +42,28 @@
             v-if="this.xmfcActive === 'sjmx' || this.xmfcActive === 'qjmx'"
           ></iframe>
 
-          <div
-            class="F1108402"
-            v-if="this.xmfcActive === 'chtz'"
-          >
-          </div>
+          <div class="F1108402" v-if="this.xmfcActive === 'chtz'"></div>
         </div>
       </div>
       <!-- 照片栏 -->
-      <div class="Frame710 F71006"></div>
+      <div class="Frame710 F71006">
+        <swiper class="swiper swiper02" :options="swiperOption02">
+          <swiper-slide
+            class="swiper-slide02"
+            v-for="(item, index) in xm[xmActive].imagesPath"
+            :key="index"
+            :style="`background-image: url( ${require('@/assets/image/' +
+              item)} )`"
+          >
+          </swiper-slide>
+        </swiper>
+      </div>
       <!-- 项目栏 -->
       <div class="Frame710 F71007">
         <div class="outSwiperBox">
-          <swiper class="swiper inSwiperBox" :options="swiperOption">
+          <swiper class="swiper swiper01 inSwiperBox" :options="swiperOption01">
             <swiper-slide
+              class="swiper-slide01"
               v-for="(item, index) in xm"
               :key="index"
               :class="xmActive == item.id ? 'BB' : ''"
@@ -96,9 +104,8 @@ export default {
       xmfc: dxxm.xmfc,
       xmfcActive: 'sjmx',
       xmfcdetail: dxxm.xm[0].sjmx,
-      pdfTotal: 1,
       xmActive: 0,
-      swiperOption: {
+      swiperOption01: {
         slidesPerView: 4,
         spaceBetween: 22,
         slidesPerGroup: 1,
@@ -144,6 +151,30 @@ export default {
         //   snapOnRelease: true, // 如果设置为false，释放滚动条时slide不会自动贴合。
         //   dragSize: 20, // 设置滚动条指示的尺寸。默认'auto': 自动，或者设置num(px)。
         // },
+      },
+      swiperOption02: {
+        slidesPerView: 3,
+        spaceBetween: 46,
+        slidesPerGroup: 1,
+        loop: true,
+        direction: 'vertical',
+        on: {
+          click() {
+            this.autoplay.stop();
+          },
+          doubleTap() {
+            this.autoplay.start();
+          },
+        },
+        autoplay: {
+          // 自动轮播
+          delay: 3000,
+          // stopOnLastSlide: false,
+          disableOnInteraction: false,
+        },
+        loopFillGroupWithBlank: true,
+        mousewheel: true, // 开启鼠标滚轮控制Swiper切换。可设置鼠标选项，默认值false
+        mousewheelControl: true, // 同上
       },
     };
   },

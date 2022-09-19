@@ -1,7 +1,7 @@
 <template>
   <div class="jkBG">
-    <DxxmView v-show="active == Daoht[3].id"></DxxmView>
-    <GywmView v-show="active == Daoht[5].id"></GywmView>
+    <DxxmView v-if="active == Daoht[3].id"></DxxmView>
+    <GywmView v-if="active == Daoht[5].id"></GywmView>
     <div class="daoHT">
       <div class="VectorDHT">
         <div class="ttfDHT1001">上海建科房屋检测数字化协同工作管理平台</div>
