@@ -70,6 +70,7 @@
     /* identical to box height */
     color: #FFFFFF;
     cursor: pointer;
+    text-decoration: none;
 
 }
 .ttfDHT10694{
@@ -128,6 +129,7 @@
     text-align: center;
     color: #4EEDFF;
     cursor: pointer;
+    text-decoration: none;
 }
 .Y{
     color: #F5C915;

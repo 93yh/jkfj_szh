@@ -11,7 +11,7 @@ const routes = [
     component: HomeView,
     children: [
       {
-        path: '/Dxxm',
+        path: 'Dxxm',
         name: 'Dxxm',
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
@@ -19,7 +19,7 @@ const routes = [
         component: () => import(/* webpackChunkName: "Dxxm" */ '../components/DxxmView.vue'),
       },
       {
-        path: '/Gywm',
+        path: 'Gywm',
         name: 'Gywm',
         component: () => import(/* webpackChunkName: "Gywm" */ '../components/GywmView.vue'),
       },

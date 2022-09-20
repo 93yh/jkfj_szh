@@ -1,7 +1,8 @@
 <template>
   <div class="jkBG">
-    <DxxmView v-if="active == Daoht[3].id"></DxxmView>
-    <GywmView v-if="active == Daoht[5].id"></GywmView>
+    <!-- <DxxmView v-if="active == Daoht[3].id"></DxxmView>
+    <GywmView v-if="active == Daoht[5].id"></GywmView> -->
+    <router-view></router-view>
     <div class="daoHT">
       <div class="VectorDHT">
         <div class="ttfDHT1001">上海建科房屋检测数字化协同工作管理平台</div>
@@ -34,13 +35,14 @@
             {{ Daoht[2].name }}
           </div>
           <!-- 典型项目 -->
-          <div
-            class="ttfDHT10671"
-            :class="active == Daoht[3].id ? 'Y' : ''"
-            @click="isClick(Daoht[3].id)"
-            @keydown="isClick(Daoht[3].id)"
-          >
-            {{ Daoht[3].name }}
+          <div @click="isClick(Daoht[3].id)" @keydown="isClick(Daoht[3].id)">
+            <router-link
+              to="/Dxxm"
+              class="ttfDHT10671"
+              :class="active == Daoht[3].id ? 'Y' : ''"
+            >
+              {{ Daoht[3].name }}
+            </router-link>
           </div>
         </div>
       </div>
@@ -63,13 +65,14 @@
         <div
           :class="active == Daoht[5].id ? 'Vector10694Y' : 'Vector10694B'"
         ></div>
-        <div
-          class="ttfDHT10694"
-          :class="active == Daoht[5].id ? 'Y' : ''"
-          @click="isClick(Daoht[5].id)"
-          @keydown="isClick(Daoht[5].id)"
-        >
-          {{ Daoht[5].name }}
+        <div @click="isClick(Daoht[5].id)" @keydown="isClick(Daoht[5].id)">
+          <router-link
+            to="/Gywm"
+            class="ttfDHT10694"
+            :class="active == Daoht[5].id ? 'Y' : ''"
+          >
+            {{ Daoht[5].name }}
+          </router-link>
         </div>
       </div>
     </div>
@@ -78,15 +81,15 @@
 
 <script>
 import Dht from '@/assets/data/Dht.json';
-import GywmView from '@/components/GywmView.vue';
-import DxxmView from '@/components/DxxmView.vue';
+// import GywmView from '@/components/GywmView.vue';
+// import DxxmView from '@/components/DxxmView.vue';
 
 export default {
   name: 'jkBG',
-  components: {
-    GywmView,
-    DxxmView,
-  },
+  // components: {
+  //   GywmView,
+  //   DxxmView,
+  // },
   data() {
     return {
       Daoht: Dht.Daoht,
@@ -103,7 +106,7 @@ export default {
 
 <style scoped>
 .jkBG {
-  background: url("~@/assets/image/bg.png");
+  background: url('~@/assets/image/bg.png');
   /* 3840x2160_07_关于我们 */
   /* position: relative;
     width: 3840px;
@@ -122,5 +125,5 @@ export default {
   left: 0px;
   top: 48px;
 }
-@import "~@/assets/css/daoHT.css";
+@import '~@/assets/css/daoHT.css';
 </style>

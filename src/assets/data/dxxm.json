@@ -18,7 +18,7 @@
             "id": 1,
             "xmName": "南京总统府安全性检测",
             "imgPath": "image97.jpg",
-            "imagesPath": ["image108.png","image102.png","image101.png"],
+            "imagesPath": ["image108.png","image102.png","image101.png","image108.png","image102.png","image101.png"],
             "sjmx": "http://pm.jkfj.tech:5003/MODEL/model/nanjingzongtongfu/index.html",
             "qjmx": "http://pm.jkfj.tech:5003/MODEL/panorama/nanjingzongtongfu/tour.html",
             "chtz":  "image112.pdf",

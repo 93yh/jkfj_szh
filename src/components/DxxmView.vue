@@ -47,11 +47,16 @@
       </div>
       <!-- 照片栏 -->
       <div class="Frame710 F71006">
-        <swiper class="swiper swiper02" :options="swiperOption02">
+        <swiper
+          class="swiper02"
+          :options="swiperOption02"
+          ref="swiperOption02"
+        >
           <swiper-slide
             class="swiper-slide02"
             v-for="(item, index) in xm[xmActive].imagesPath"
             :key="index"
+            :id="item.id"
             :style="`background-image: url( ${require('@/assets/image/' +
               item)} )`"
           >
@@ -61,7 +66,11 @@
       <!-- 项目栏 -->
       <div class="Frame710 F71007">
         <div class="outSwiperBox">
-          <swiper class="swiper swiper01 inSwiperBox" :options="swiperOption01">
+          <swiper
+            class="swiper01 inSwiperBox"
+            :options="swiperOption01"
+            ref="swiperOption01"
+          >
             <swiper-slide
               class="swiper-slide01"
               v-for="(item, index) in xm"
@@ -110,6 +119,8 @@ export default {
         spaceBetween: 22,
         slidesPerGroup: 1,
         loop: true,
+        observer: true,
+        observeParents: true,
         on: {
           click(sw) {
             vm.xmActive = sw.target.id; // 这里this是swiper的实例
@@ -157,11 +168,15 @@ export default {
         spaceBetween: 46,
         slidesPerGroup: 1,
         loop: true,
+        observer: true,
+        observeParents: true,
         direction: 'vertical',
         on: {
-          // click() {
-          //   this.autoplay.stop();
-          // },
+          click() {
+            // this.slideTo(sw2.target.id, 0);
+            this.autoplay.stop();
+            // window.console.log(this);
+          },
           doubleTap() {
             this.autoplay.start();
           },
@@ -180,6 +195,7 @@ export default {
   },
   created() {
     vm = this;
+    // window.console.log(vm);
   },
   methods: {
     xmfcClick(abbr, id) {
