@@ -159,16 +159,16 @@ export default {
         loop: true,
         direction: 'vertical',
         on: {
-          click() {
-            this.autoplay.stop();
-          },
+          // click() {
+          //   this.autoplay.stop();
+          // },
           doubleTap() {
             this.autoplay.start();
           },
         },
         autoplay: {
           // 自动轮播
-          delay: 3000,
+          delay: 1500,
           // stopOnLastSlide: false,
           disableOnInteraction: false,
         },

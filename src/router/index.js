@@ -9,20 +9,22 @@ const routes = [
     path: '/',
     name: 'jkBG',
     component: HomeView,
+    children: [
+      {
+        path: '/Dxxm',
+        name: 'Dxxm',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "Dxxm" */ '../components/DxxmView.vue'),
+      },
+      {
+        path: '/Gywm',
+        name: 'Gywm',
+        component: () => import(/* webpackChunkName: "Gywm" */ '../components/GywmView.vue'),
+      },
+    ],
   },
-  // {
-  //   path: '/Dxxm',
-  //   name: 'Dxxm',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "Dxxm" */ '../components/DxxmView.vue'),
-  // },
-  // {
-  //   path: '/Gywm',
-  //   name: 'Gywm',
-  //   component: () => import(/* webpackChunkName: "Gywm" */ '../components/GywmView.vue'),
-  // },
 ];
 
 const router = new VueRouter({
