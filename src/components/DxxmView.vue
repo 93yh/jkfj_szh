@@ -41,17 +41,21 @@
             title="项目风采"
             v-if="this.xmfcActive === 'sjmx' || this.xmfcActive === 'qjmx'"
           ></iframe>
-
-          <div class="F1108402" v-if="this.xmfcActive === 'chtz'"></div>
+          <!-- <pdfView class="F1108402" v-if="this.xmfcActive === 'chtz'"></pdfView> -->
+          <pdfView
+            v-if="this.xmfcActive === 'chtz'"
+            :pdfUrl="xmfcdetail"
+          ></pdfView>
+          <gddtView
+            v-if="this.xmfcActive === 'xmwz'"
+            :xmwzCenter="xmfcdetail"
+            :xmfcName="xmfcName"
+          ></gddtView>
         </div>
       </div>
       <!-- 照片栏 -->
       <div class="Frame710 F71006">
-        <swiper
-          class="swiper02"
-          :options="swiperOption02"
-          ref="swiperOption02"
-        >
+        <swiper class="swiper02" :options="swiperOption02" ref="swiperOption02">
           <swiper-slide
             class="swiper-slide02"
             v-for="(item, index) in xm[xmActive].imagesPath"
@@ -99,6 +103,8 @@
 import dxxm from '@/assets/data/dxxm.json';
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
+import pdfView from '@/components/pdfView.vue';
+import gddtView from '@/components/gddtView.vue';
 
 let vm = null;
 export default {
@@ -106,6 +112,8 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    pdfView,
+    gddtView,
   },
   data() {
     return {
@@ -114,6 +122,7 @@ export default {
       xmfcActive: 'sjmx',
       xmfcdetail: dxxm.xm[0].sjmx,
       xmActive: 0,
+      xmfcName: '',
       swiperOption01: {
         slidesPerView: 4,
         spaceBetween: 22,
@@ -201,6 +210,7 @@ export default {
     xmfcClick(abbr, id) {
       this.xmfcActive = abbr;
       this.xmfcdetail = this.xm[id][abbr];
+      this.xmfcName = this.xm[id].xmName;
     },
   },
 };
